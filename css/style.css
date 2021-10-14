@@ -1,0 +1,262 @@
+[v-cloak] {
+  display: none
+}
+
+html {
+  min-height: 100%;
+}
+body {
+  font-size: 16px;
+  color: #e7e7e7;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #3a3b48;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+.clearfix::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+header {
+  background: #6a6c8d;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  margin-bottom: 5px;
+}
+
+header h1{
+  font-size: 28px;
+  color: #fff;
+}
+
+#app {
+  overflow: hidden;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+#sidebar {
+  margin: 5px;
+  padding: 5px;
+  width: 280px;
+  min-height: 100%;
+  float: left;
+  background: #5e5e6a;
+  color: #f1f1f1f1;
+}
+#sidebar .oya_title {
+  padding-left: 10px;
+}
+
+#sidebar .oya_list {
+  list-style-type: none;
+  padding-left: 5px;
+}
+#contents {
+  margin: 5px;
+  padding: 5px;
+  float: right;
+  width: 780px;
+  min-height: 100%;
+  /*height: 800px; */
+  background: #48485a;
+}
+
+#contents h2 {
+  font-size: 24px;
+  color: #dfdfdf;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+
+html,
+body,
+#editor {
+  margin: 0;
+  min-height: 100%;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: #333;
+}
+
+textarea,
+#editor div {
+  display: inline-block;
+  width: 49%;
+  min-height: 100%;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+textarea {
+  border: none;
+  border-right: 1px solid #ccc;
+  resize: none;
+  outline: none;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  font-family: "Monaco", courier, monospace;
+  padding: 20px;
+}
+
+code {
+  color: #f66;
+}
+
+.newCreate textarea {
+  width: 100%;
+  height: 640px;
+}
+
+.content_title {
+  text-align: center;
+}
+
+.content_preview {
+  overflow: hidden;
+    background: #ffffff;
+    padding: 10px;
+    overflow-y: auto;
+    min-height: 600px;
+    max-height: 800px;
+    font-family: "Yu-Gothic-UI";
+}
+.vs__clear {
+  display: none;
+}
+.editor_chenge {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.editor_chenge a {
+  display: flex;
+  float: left;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 160px;
+	height: 30px;
+	color: #f0f0f0;
+	font-size: 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	background-color: #8565f1;
+	border: 1px solid #000dff;
+}
+
+.editor_chenge a:hover {
+	background-color: #5624ff;
+	border: 1px solid #333;
+}
+
+.submit_btm a {
+  margin: 20px auto 20px;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 160px;
+	height: 30px;
+	color: #f0f0f0;
+	font-size: 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	background-color: #0048ff;
+	border: 1px solid #000dff;
+}
+
+.submit_btm a:hover {
+	background-color: #648fff;
+	border: 1px solid #333;
+}
+
+.update_link a {
+  float: left;
+  margin-right: 10px;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 160px;
+	height: 30px;
+	color: #f0f0f0;
+	font-size: 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	background-color: #0048ff;
+	border: 1px solid #000dff;
+}
+
+.update_link a:hover {
+	background-color: #648fff;
+	border: 1px solid #333;
+}
+
+.editor_chenge .modal_his {
+  float: right;
+  width: 180px;
+}
